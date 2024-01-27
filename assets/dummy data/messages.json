@@ -1,0 +1,119 @@
+[
+  {
+    "id": "m1",
+    "text": "How are you, Sam! Getting ready for the Ironman World Champs?",
+    "createdAt": "2024-01-10T12:48:00.000Z",
+    "user": {
+      "id": "u1",
+      "name": "Marshall"
+    }
+  },
+  {
+    "id": "m2",
+    "text": "I'm good, good. Just finished a solid swim session to prepare for the swim leg.",
+    "createdAt": "2024-01-03T14:49:00.000Z",
+    "user": {
+      "id": "u2",
+      "name": "Sam"
+    }
+  },
+  {
+    "id": "m3",
+    "text": "What about you? How's your bike and run training going?",
+    "createdAt": "2024-01-03T14:49:40.000Z",
+    "user": {
+      "id": "u2",
+      "name": "Sam"
+    }
+  },
+  {
+    "id": "m4",
+    "text": "Good as well, preparing for a swim now. Just finished an awful bike ride in the hills.",
+    "createdAt": "2024-01-03T14:50:00.000Z",
+    "user": {
+      "id": "u1",
+      "name": "Marshall"
+    }
+  },
+  {
+    "id": "m5",
+    "text": "How's your nutrition plan coming along? Proper fueling is crucial for endurance events like the Ironman.",
+    "createdAt": "2024-01-03T14:51:00.000Z",
+    "user": {
+      "id": "u2",
+      "name": "Sam"
+    }
+  },
+  {
+    "id": "m6",
+    "text": "Absolutely! I've been focusing on carbo loading in the mornings and at lunch, and getting my veggies and fibre in at dinner.",
+    "createdAt": "2024-01-03T14:49:00.000Z",
+    "user": {
+      "id": "u1",
+      "name": "Marshall"
+    }
+  },
+  {
+    "id": "m7",
+    "text": "Have you incorporated any strength training into your routine? It can enhance overall performance and reduce the risk of injuries.",
+    "createdAt": "2024-01-03T14:53:00.000Z",
+    "user": {
+      "id": "u2",
+      "name": "Sam"
+    }
+  },
+  {
+    "id": "m8",
+    "text": "I've started adding some strength workouts, especially focusing on core stability. I haven't been doing enough unfortunately.",
+    "createdAt": "2024-01-03T14:53:00.000Z",
+    "user": {
+      "id": "u1",
+      "name": "Marshall"
+    }
+  },
+  {
+    "id": "m9",
+    "text": "How's your mental preparation? Dealing with the mental challenges during an Ironman is just as crucial as physical training.",
+    "createdAt": "2024-01-03T14:53:00.000Z",
+    "user": {
+      "id": "u2",
+      "name": "Sam"
+    }
+  },
+  {
+    "id": "m10",
+    "text": "Absolutely, Sam! I've been visualizing myself during the event, I'm going to get emotional for sure.",
+    "createdAt": "2024-01-03T14:53:00.000Z",
+    "user": {
+      "id": "u1",
+      "name": "Marshall"
+    }
+  },
+  {
+    "id": "m11",
+    "text": "It sounds like you're on the right track. What's your race-day strategy for nutrition and pacing?",
+    "createdAt": "2024-01-03T14:53:00.000Z",
+    "user": {
+      "id": "u2",
+      "name": "Sam"
+    }
+  },
+  {
+    "id": "m12",
+    "text": "Absolutely ram in the carbs and protein the week leading up to the race. Pacing-wise, aiming for a steady effort throughout.",
+    "createdAt": "2024-01-03T14:53:00.000Z",
+    "user": {
+      "id": "u1",
+      "name": "Marshall"
+    }
+  },
+  {
+    "id": "m13",
+    "text": "That sounds solid! Let me know if you need any support. You've got this!",
+    "createdAt": "2024-01-03T14:53:00.000Z",
+    "user": {
+      "id": "u2",
+      "name": "Sam"
+    }
+  }
+]

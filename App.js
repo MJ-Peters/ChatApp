@@ -1,25 +1,13 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-import ChatListItem from './src/components/ChatListItem';
+import ChatsScreen from './src/screens/ChatsScreen';
 
-// Dummy chat data
-const chat = {
-  id: "1",
-  user: {
-    image:
-      "https://backend.artreview.com/wp-content/uploads/2021/11/square-Mark-Zuckerberg_Courtesy-Facebook.jpg",
-    name: "Mark",
-  },
-  lastMessage: {
-    text: "Hello World",
-    createdAt: "08:30",
-  },
-};
+// LEAVE APP.JS AS CLEAN AS POSSIBLE. ONLY HAVE GLOBAL STUFF IN THIS FILE
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <ChatListItem chat={chat} />
+      <ChatsScreen />
       <StatusBar style="auto" />
     </View>
   );
@@ -29,7 +17,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    alignItems: 'center',
     justifyContent: 'center',
+    paddingVertical: 50  // Temporary iphone camera notch fix
   },
 });
