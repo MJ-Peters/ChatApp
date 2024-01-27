@@ -21,7 +21,7 @@ const Message = ({ message }) => {
 
 const styles = StyleSheet.create({
     container: {
-        margin: 5,
+        marginHorizontal: 5,
         marginBottom: 20,
         padding: 10,
         borderRadius: 10,
