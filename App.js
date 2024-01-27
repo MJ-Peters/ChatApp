@@ -1,13 +1,14 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import ChatsScreen from './src/screens/ChatsScreen';
+import ChatScreen from './src/screens/ChatScreen';
 
 // LEAVE APP.JS AS CLEAN AS POSSIBLE. ONLY HAVE GLOBAL STUFF IN THIS FILE
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <ChatsScreen />
+      <ChatScreen />
       <StatusBar style="auto" />
     </View>
   );

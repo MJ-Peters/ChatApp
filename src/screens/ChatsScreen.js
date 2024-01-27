@@ -1,6 +1,6 @@
-import { View, Text, FlatList } from 'react-native'
-import chats from '../../assets/dummy data/chats.json'
-import ChatListItem from '../components/ChatListItem'
+import { View, Text, FlatList } from 'react-native';
+import chats from '../../assets/dummy data/chats.json';
+import ChatListItem from '../components/ChatListItem';
 
 const ChatsScreen = () => {
   return (
