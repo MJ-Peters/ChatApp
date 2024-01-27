@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { View, Text, StyleSheet, TextInput } from 'react-native'
 import {AntDesign, MaterialCommunityIcons} from '@expo/vector-icons'
+import { SafeAreaView } from "react-native-safe-area-context"
 
 const InputBox = () => {
     const [newMessage, setNewMessage] = useState("")
@@ -11,7 +12,7 @@ const InputBox = () => {
     }
 
   return (
-    <View style={styles.container}>
+    <SafeAreaView edges={["bottom"]} style={styles.container}>
         {/* Additional Media Icon */}
         <AntDesign name="pluscircle" size={24} color="royalblue" />
 
@@ -31,7 +32,7 @@ const InputBox = () => {
             size={30}
             color="royalblue"
         />
-    </View>
+    </SafeAreaView>
   )
 }
 
