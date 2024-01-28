@@ -22,7 +22,7 @@ const ContactListItem = ({ user }) => {
                     {user.name}
                 </Text>
                 <Text numberOfLines={2} style={styles.subTitle}>
-                    {user.Status}
+                    {user.status}
                 </Text>
             </View>
         </Pressable>
@@ -48,7 +48,7 @@ const styles = StyleSheet.create({
         fontWeight: 'bold'
     },
     content: {
-
+        flex: 1
     },
     subTitle: {
         color: "grey"
