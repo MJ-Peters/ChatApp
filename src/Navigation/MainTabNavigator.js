@@ -47,20 +47,21 @@ const MainTabNavigator = () => {
         <Tab.Screen
             name="Chats"
             component={ChatsScreen}
-            options={{
+            options={({navigation}) => ({
                 headerTitleAlign: "center",
                 tabBarIcon: ({ color, size }) => (
                     <Ionicons name="chatbubbles-outline" size={size} color={color} />
                 ),
                 headerRight: () => (
                     <Ionicons
+                        onPress={() => navigation.navigate("Contacts")}
                         name="create-outline"
                         size={24}
                         color={"royalblue"}
                         style={{marginRight: 15}}
                     />
                 )
-            }}
+            })}
         />
         <Tab.Screen
             name="Settings"

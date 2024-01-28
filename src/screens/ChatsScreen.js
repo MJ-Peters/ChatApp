@@ -7,7 +7,7 @@ const ChatsScreen = () => {
     // renderItem is a function for instructions on rendering items from chats
     <FlatList
         data ={chats}
-        renderItem={({ item }) => <ChatListItem chat={item} />}
+        renderItem={({ item }) => <ChatListItem chat={item} style={{backgroundColor: "white"}}/>}
     />
   )
 }

@@ -4,7 +4,8 @@
     "user": {
       "id": "u2",
       "name": "Sam",
-      "image": "https://s.err.ee/photo/crop/2023/09/11/2073929h6b85t4.jpg"
+      "image": "https://s.err.ee/photo/crop/2023/09/11/2073929h6b85t4.jpg",
+      "Status": "2023 Ironman World Champ"
     },
     "lastMessage": {
       "id": "m1",
@@ -17,7 +18,8 @@
     "user": {
       "id": "u3",
       "name": "Rob",
-      "image": "https://yt3.googleusercontent.com/wG6eKjCTTJ2SQyOgjBSADq-Ce-bDMovu57oCCL7dx-jgopvsGYceXmRdxGKQK573CIAZY9OO9w=s900-c-k-c0x00ffffff-no-rj"
+      "image": "https://yt3.googleusercontent.com/wG6eKjCTTJ2SQyOgjBSADq-Ce-bDMovu57oCCL7dx-jgopvsGYceXmRdxGKQK573CIAZY9OO9w=s900-c-k-c0x00ffffff-no-rj",
+      "Status": "An average Belgian"
     },
     "lastMessage": {
       "id": "m2",
@@ -30,7 +32,8 @@
     "user": {
       "id": "u4",
       "name": "Alistair",
-      "image": "https://img.olympics.com/images/image/private/t_1-1_300/f_auto/primary/uu7jpulxrgeacinle52z"
+      "image": "https://img.olympics.com/images/image/private/t_1-1_300/f_auto/primary/uu7jpulxrgeacinle52z",
+      "Status": "Two time gold medal triathlete"
     },
     "lastMessage": {
       "id": "m3",
@@ -43,7 +46,8 @@
     "user": {
       "id": "u5",
       "name": "Jonathan",
-      "image": "https://sportsmatik.com/uploads/world-events/players/jonathan-brownlee_1564483765.jpg"
+      "image": "https://sportsmatik.com/uploads/world-events/players/jonathan-brownlee_1564483765.jpg",
+      "Status": "Six time triathlon World Champion"
     },
     "lastMessage": {
       "id": "m4",
@@ -56,7 +60,8 @@
     "user": {
       "id": "u6",
       "name": "Lucy",
-      "image": "https://pbs.twimg.com/profile_images/1578655317667155968/s1Gtpgyr_400x400.jpg"
+      "image": "https://pbs.twimg.com/profile_images/1578655317667155968/s1Gtpgyr_400x400.jpg",
+      "Status": "2023 Ironman World Champ"
     },
     "lastMessage": {
       "id": "m5",
@@ -69,7 +74,8 @@
     "user": {
       "id": "u7",
       "name": "Luc",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Luc_Van_Lierde_%28BEL%29_2008.jpg"
+      "image": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Luc_Van_Lierde_%28BEL%29_2008.jpg",
+      "Status": "Former Ironman world record holder"
     },
     "lastMessage": {
       "id": "m6",
@@ -82,7 +88,8 @@
     "user": {
       "id": "u8",
       "name": "Frederik",
-      "image": "https://www.slowtwitch.com/articles/images/2/83512-work-FVanLierde_runs.jpg"
+      "image": "https://www.slowtwitch.com/articles/images/2/83512-work-FVanLierde_runs.jpg",
+      "Status": "2013 Ironman World Champ"
     },
     "lastMessage": {
       "id": "m7",
@@ -95,7 +102,8 @@
     "user": {
       "id": "u9",
       "name": "Mum",
-      "image": "https://image.shutterstock.com/image-vector/super-mom-hero-superhero-cartoon-600w-720015928.jpg"
+      "image": "https://image.shutterstock.com/image-vector/super-mom-hero-superhero-cartoon-600w-720015928.jpg",
+      "Status": "Live, Laugh, Love"
     },
     "lastMessage": {
       "id": "m8",
