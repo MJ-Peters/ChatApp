@@ -13,7 +13,7 @@ const ChatScreen = () => {
 
     // Defining a function to change the title of the chats page only when the params.name value changes
     useEffect(() => {
-        navigation.setOptions({ title: route.params.name, headerTitleAlign: "center" })
+        navigation.setOptions({ title: route.params.name })
     }, [route.params])
 
     return (

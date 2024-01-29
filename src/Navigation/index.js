@@ -23,7 +23,7 @@ const Navigator = () => {
                 name="Chat"
                 component={ChatScreen}
                 options={{
-                    //headerTitleAlign: "center"
+                    headerTitleAlign: "center"
                 }}
             />
             <Stack.Screen
