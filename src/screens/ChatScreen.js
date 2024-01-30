@@ -12,22 +12,39 @@ import InputBox from "../components/InputBox";
 
 import bg from "../../assets/images/BG.png";
 import { API, graphqlOperation } from "aws-amplify";
-import { getChatRoom } from "../graphql/queries";
+import { getChatRoom, listMessagesByChatRoom } from "../graphql/queries";
 
 const ChatScreen = () => {
   const [chatRoom, setChatRoom] = useState(null);
+  const [messages, setMessages] = useState([]);
 
   const route = useRoute();
   const navigation = useNavigation();
 
   const chatroomID = route.params.id;
 
+  // Fetch chat room
   useEffect(() => {
     API.graphql(graphqlOperation(getChatRoom, { id: chatroomID })).then(
       (result) => setChatRoom(result.data?.getChatRoom)
     );
   }, []);
 
+  // Fetch messages
+  useEffect(() => {
+    API.graphql(
+      graphqlOperation(listMessagesByChatRoom, {
+        chatroomID,
+        sortDirection: "ASC"
+      })
+    ).then(
+      (result) => {
+        setMessages(result.data?.listMessagesByChatRoom?.items)
+      }
+    );
+  }, [])
+
+  // 
   useEffect(() => {
     navigation.setOptions({ title: route.params.name });
   }, [route.params.name]);
@@ -36,15 +53,12 @@ const ChatScreen = () => {
     return <ActivityIndicator />;
   }
 
-  console.log(chatRoom.Messages.items);
-
   return (
     <ImageBackground source={bg} style={styles.bg}>
     <FlatList
-        data={chatRoom.Messages.items}
+        data={messages}
         renderItem={({ item }) => <Message message={item} />}
         style={styles.list}
-        inverted
     />
     <InputBox chatroom={chatRoom} />
     </ImageBackground>
