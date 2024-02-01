@@ -13,6 +13,7 @@ import InputBox from "../components/InputBox";
 import bg from "../../assets/images/BG.png";
 import { API, graphqlOperation } from "aws-amplify";
 import { getChatRoom, listMessagesByChatRoom } from "../graphql/queries";
+import { onCreateMessage } from "../graphql/subscriptions"
 
 const ChatScreen = () => {
   const [chatRoom, setChatRoom] = useState(null);
@@ -42,6 +43,20 @@ const ChatScreen = () => {
         setMessages(result.data?.listMessagesByChatRoom?.items)
       }
     );
+
+    // Subscribe to new messages ONLY relating to the current chatroom
+    const subscription = API.graphql(
+      graphqlOperation(onCreateMessage, {filter: { chatroomID: { eq: chatroomID } }})
+      ).subscribe({
+        next: ({ value }) => {
+          setMessages((m) => [value.data.onCreateMessage, ...m]);
+        },
+        error: (error) => console.warn(error),
+    });
+
+    // Stop receiving updates from the subscription
+    return () => subscription.unsubscribe();
+
   }, [chatroomID])  // Calls the useEffect whenever we move to another chat room
 
   // 
@@ -56,9 +71,9 @@ const ChatScreen = () => {
   return (
     <ImageBackground source={bg} style={styles.bg}>
     <FlatList
-        data={messages}
-        renderItem={({ item }) => <Message message={item} />}
-        style={styles.list}
+        data={chatRoom.Messages.items}
+          renderItem={({ item }) => <Message message={item} />}
+          style={styles.list}
     />
     <InputBox chatroom={chatRoom} />
     </ImageBackground>
