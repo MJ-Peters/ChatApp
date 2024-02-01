@@ -28,7 +28,7 @@ const ChatScreen = () => {
     API.graphql(graphqlOperation(getChatRoom, { id: chatroomID })).then(
       (result) => setChatRoom(result.data?.getChatRoom)
     );
-  }, []);
+  }, [chatroomID]);  // Calls the useEffect whenever we move to another chat room
 
   // Fetch messages
   useEffect(() => {
@@ -42,7 +42,7 @@ const ChatScreen = () => {
         setMessages(result.data?.listMessagesByChatRoom?.items)
       }
     );
-  }, [])
+  }, [chatroomID])  // Calls the useEffect whenever we move to another chat room
 
   // 
   useEffect(() => {
